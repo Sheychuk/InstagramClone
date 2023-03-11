@@ -1,0 +1,253 @@
+/* tslint:disable */
+/* eslint-disable */
+// this is an auto generated file. This will be overwritten
+
+export const onCreateUser = /* GraphQL */ `
+  subscription OnCreateUser($filter: ModelSubscriptionUserFilterInput) {
+    onCreateUser(filter: $filter) {
+      id
+      name
+      image
+      posts {
+        items {
+          id
+          caption
+          image
+          likes
+          createdAt
+          updatedAt
+          userPostsId
+        }
+        nextToken
+      }
+      stories {
+        items {
+          id
+          image
+          createdAt
+          updatedAt
+          userStoriesId
+        }
+        nextToken
+      }
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const onUpdateUser = /* GraphQL */ `
+  subscription OnUpdateUser($filter: ModelSubscriptionUserFilterInput) {
+    onUpdateUser(filter: $filter) {
+      id
+      name
+      image
+      posts {
+        items {
+          id
+          caption
+          image
+          likes
+          createdAt
+          updatedAt
+          userPostsId
+        }
+        nextToken
+      }
+      stories {
+        items {
+          id
+          image
+          createdAt
+          updatedAt
+          userStoriesId
+        }
+        nextToken
+      }
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const onDeleteUser = /* GraphQL */ `
+  subscription OnDeleteUser($filter: ModelSubscriptionUserFilterInput) {
+    onDeleteUser(filter: $filter) {
+      id
+      name
+      image
+      posts {
+        items {
+          id
+          caption
+          image
+          likes
+          createdAt
+          updatedAt
+          userPostsId
+        }
+        nextToken
+      }
+      stories {
+        items {
+          id
+          image
+          createdAt
+          updatedAt
+          userStoriesId
+        }
+        nextToken
+      }
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const onCreatePost = /* GraphQL */ `
+  subscription OnCreatePost($filter: ModelSubscriptionPostFilterInput) {
+    onCreatePost(filter: $filter) {
+      id
+      caption
+      image
+      likes
+      user {
+        id
+        name
+        image
+        posts {
+          nextToken
+        }
+        stories {
+          nextToken
+        }
+        createdAt
+        updatedAt
+      }
+      createdAt
+      updatedAt
+      userPostsId
+    }
+  }
+`;
+export const onUpdatePost = /* GraphQL */ `
+  subscription OnUpdatePost($filter: ModelSubscriptionPostFilterInput) {
+    onUpdatePost(filter: $filter) {
+      id
+      caption
+      image
+      likes
+      user {
+        id
+        name
+        image
+        posts {
+          nextToken
+        }
+        stories {
+          nextToken
+        }
+        createdAt
+        updatedAt
+      }
+      createdAt
+      updatedAt
+      userPostsId
+    }
+  }
+`;
+export const onDeletePost = /* GraphQL */ `
+  subscription OnDeletePost($filter: ModelSubscriptionPostFilterInput) {
+    onDeletePost(filter: $filter) {
+      id
+      caption
+      image
+      likes
+      user {
+        id
+        name
+        image
+        posts {
+          nextToken
+        }
+        stories {
+          nextToken
+        }
+        createdAt
+        updatedAt
+      }
+      createdAt
+      updatedAt
+      userPostsId
+    }
+  }
+`;
+export const onCreateStory = /* GraphQL */ `
+  subscription OnCreateStory($filter: ModelSubscriptionStoryFilterInput) {
+    onCreateStory(filter: $filter) {
+      id
+      user {
+        id
+        name
+        image
+        posts {
+          nextToken
+        }
+        stories {
+          nextToken
+        }
+        createdAt
+        updatedAt
+      }
+      image
+      createdAt
+      updatedAt
+      userStoriesId
+    }
+  }
+`;
+export const onUpdateStory = /* GraphQL */ `
+  subscription OnUpdateStory($filter: ModelSubscriptionStoryFilterInput) {
+    onUpdateStory(filter: $filter) {
+      id
+      user {
+        id
+        name
+        image
+        posts {
+          nextToken
+        }
+        stories {
+          nextToken
+        }
+        createdAt
+        updatedAt
+      }
+      image
+      createdAt
+      updatedAt
+      userStoriesId
+    }
+  }
+`;
+export const onDeleteStory = /* GraphQL */ `
+  subscription OnDeleteStory($filter: ModelSubscriptionStoryFilterInput) {
+    onDeleteStory(filter: $filter) {
+      id
+      user {
+        id
+        name
+        image
+        posts {
+          nextToken
+        }
+        stories {
+          nextToken
+        }
+        createdAt
+        updatedAt
+      }
+      image
+      createdAt
+      updatedAt
+      userStoriesId
+    }
+  }
+`;
